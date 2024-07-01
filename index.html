@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration-form</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/fonts.css">
+    
+</head>
+<body>
+    <main class="container">
+        <form class="container__form">
+            <table class="center">
+                <tr class="container__form-data">
+                    <th class="container__form-label-name">Name:</th>
+                    <td><input type="text" id="fname" class="container__form-input-field fname-input" placeholder="Your Name"></td>
+                </tr>
+                <tr class="container__form-data">
+                    <th class="container__form-label-name">E-mail:</th>
+                    <td>
+                        <input type="email" id="email" class="container__form-input-field email-input" placeholder="Your E-mail">
+                    </td>
+                </tr>
+                <tr class="container__form-data">
+                    <th class="container__form-label-name">Password:</th>
+                    <td>
+                        <input type="password" name="pwd" id="pwd" class="container__form-input-field password-input"  placeholder="password" >
+                    </td>
+                </tr>
+                <tr class="container__form-data">
+                    <th class="container__form-label-name">Phone number:</th>
+                    <td>
+                        <input type="number" id="number" class="container__form-input-field number-input" placeholder="Enter Phone number" maxlength="10">
+                    </td>
+                </tr>
+                <tr class="container__form-data">
+                    <th class="container__form-label-name">Gender:</th>
+                    <td>
+                        Male: <input type="radio" name="gender" value="Male"/>
+                        Female: <input type="radio" name="gender" value="Female"/>
+                        other: <input type="radio" name="gender" value="other"/>  
+                        <!-- <div id="gender-error" class="error-message"></div> -->
+                    </td>
+                </tr>
+                <tr class="container__form-data">
+                    <th class="container__form-label-name">language:</th>
+                    <td>
+                        <select id="language" name="language" class="container__form-input-field container__form-language-option-field">
+                            <option class="container__form-language-option-field" >select language</option>
+                            <option class="container__form-language-option-field">Hindi</option>
+                            <option class="container__form-language-option-field">Gujrati</option>
+                            <option class="container__form-language-option-field">English</option>
+                            <option class="container__form-language-option-field">CHINESE</option>
+                        </select> 
+                    </td>
+                </tr>
+                <tr class="container__form-data">
+                    <th class="container__form-label-name">Zip Code:</th>
+                    <td>
+                        <input type="number" id="zip-code" class="container__form-input-field zip-code-input" placeholder="Enter Phone">
+                    </td>
+                </tr>
+                <tr class="container__form-data">
+                    <th class="container__form-label-name"> About:</th>
+                    <td>
+                        <textarea id="about-input" class="container__form-input-field about-input" rows="4" cols="20" placeholder="Write about Yourself.. "></textarea>
+                    </td>  
+                </tr>
+                
+                <tr class="container__form-data">
+                    <th colspan="2"><button type="submit" class="container__form-submit-button submit">Register</button></th>
+                </tr>
+            </table>
+        </form>
+    </main>
+   <script src="./script.js"></script>
+</body>
+</html>
